@@ -1,1 +1,6 @@
-pom.xml
+
+# maven generated classes etc.
+target/
+
+
+ 
