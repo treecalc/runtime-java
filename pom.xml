@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<properties>
-		<javaVersion>[1.6</javaVersion> <!-- you may override this in your Maven call if necessary -->
+		<javaVersion>1.6</javaVersion> <!-- you may override this in your Maven call if necessary -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<groupId>treecalc</groupId>
@@ -22,5 +22,16 @@
 			<directory>test/resources</directory>
 		  </testResource>
 		</testResources>
-	  </build>
+		
+		<plugins>
+		  <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<configuration>
+			  <source>1.5</source>
+			  <target>1.5</target>
+			</configuration>
+		  </plugin>
+		 </plugins>
+	</build>
 	</project>
