@@ -1,6 +1,6 @@
 
 # maven generated classes etc.
 target/
-
-
- 
+.classpath
+.project
+.settings/
